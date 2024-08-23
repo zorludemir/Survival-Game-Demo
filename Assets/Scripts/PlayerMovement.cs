@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -6,13 +7,17 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 5f;
     public float gravity = -9.81f;
 
+    [SerializeField]bool isSprint = false;
+
     private CharacterController controller;
     private Vector3 velocity;
     private bool isGrounded;
+    private Player player;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        player = GetComponent<Player>();
     }
 
     void Update()
@@ -35,5 +40,24 @@ public class PlayerMovement : MonoBehaviour
         }
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+        
+        if (Input.GetKey(KeyCode.LeftShift)  && !isSprint) 
+        {
+            moveSpeed = 10f;
+            player.staminaRegen = -20;
+            if(player.currentStamina <= 0)
+            {
+                isSprint = true;
+            }
+        }
+        else
+        {
+            moveSpeed = 5f;
+            player.staminaRegen = 10;
+        }
+        if(Input.GetKeyUp(KeyCode.LeftShift) && isSprint)
+        {
+            isSprint = false;
+        }
     }
 }

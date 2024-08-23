@@ -47,7 +47,8 @@ public class Player : MonoBehaviour
         if(currentHealth >= 100) currentHealth = 100;
         if(currentStamina >= 100) currentStamina = 100;
         if(currentHunger >= 100) currentHunger = 100;
-        if (currentHunger <= 0) healthRegen = -5;
+        if(currentHunger <= 0) healthRegen = -5;
+        if (currentHealth <= 0) Application.Quit();
     }
     private void Update()
     {
