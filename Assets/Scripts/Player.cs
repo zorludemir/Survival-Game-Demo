@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
         maxHealth = 100;
         maxStamina = 100;
         maxHunger = 100;
-        currentHealth = 100;
+        currentHealth = 20;
         currentStamina = 100;
         currentHunger = 100;
 

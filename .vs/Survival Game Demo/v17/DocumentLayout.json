@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "E:\\Zorludemir Game Studio\\Survival Game Demo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Survival Game Demo\\assets\\scripts\\actionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\actionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|e:\\zorludemir game studio\\survival game demo\\assets\\scripts\\toolbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\toolbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Survival Game Demo\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Survival Game Demo\\assets\\scripts\\tree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Survival Game Demo\\assets\\scripts\\inventorysystem\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventorysystem\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Survival Game Demo\\assets\\scripts\\inventorysystem\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventorysystem\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|e:\\zorludemir game studio\\survival game demo\\assets\\scripts\\inventorysystem\\itempanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventorysystem\\itempanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|e:\\zorludemir game studio\\survival game demo\\assets\\scripts\\inventorysystem\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{580B0B77-EB4D-EA92-2E0E-E22BD8B7C020}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventorysystem\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Player.cs",
-              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
-              "ToolTip": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\Player.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "InventorySlot.cs",
+              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\InventorySystem\\InventorySlot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\InventorySlot.cs",
+              "ToolTip": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\InventorySystem\\InventorySlot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\InventorySlot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T14:04:11.651Z"
+              "WhenOpened": "2024-08-26T00:04:22.158Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Tree.cs",
-              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\Tree.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Tree.cs",
-              "ToolTip": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\Tree.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Tree.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAaAAAA",
+              "Title": "ItemPanel.cs",
+              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\InventorySystem\\ItemPanel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\ItemPanel.cs",
+              "ToolTip": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\InventorySystem\\ItemPanel.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\ItemPanel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T00:34:56.159Z"
+              "WhenOpened": "2024-08-26T00:03:56.114Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ActionManager.cs",
-              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\ActionManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ActionManager.cs",
-              "ToolTip": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\ActionManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ActionManager.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAQwCoAAAAoAAAA",
+              "DocumentIndex": 2,
+              "Title": "Item.cs",
+              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\InventorySystem\\Item.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\Item.cs",
+              "ToolTip": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\InventorySystem\\Item.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T00:38:04.041Z",
+              "WhenOpened": "2024-08-26T00:01:27.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Toolbar.cs",
-              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\Toolbar.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Toolbar.cs",
-              "ToolTip": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\Toolbar.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Toolbar.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwCgAAAAlAAAA",
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\InventorySystem\\Inventory.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\Inventory.cs",
+              "ToolTip": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\InventorySystem\\Inventory.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\Inventory.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAAEIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T21:23:31.227Z",
+              "WhenOpened": "2024-08-26T00:01:12.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
+              "ToolTip": "E:\\Zorludemir Game Studio\\Survival Game Demo\\Assets\\Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T14:04:11.651Z",
               "EditorCaption": ""
             }
           ]

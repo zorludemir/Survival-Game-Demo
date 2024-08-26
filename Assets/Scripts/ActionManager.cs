@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class ActionManager : MonoBehaviour
 {
@@ -43,35 +44,46 @@ public class ActionManager : MonoBehaviour
             player.currentStamina -= 25;
             currentAnimator.SetTrigger("Hit");
         }
-
+        StartCoroutine(Action(index));
+    }
+    private IEnumerator Action(int index)
+    {
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, range))
         {
             if (hit.transform.gameObject != null)
             {
-                switch (index)
+                if(index == 0)
                 {
-                    default: return;
-                    case 0:
-                        if (hit.collider.transform.parent != null)
+                    if (hit.collider.transform.parent != null)
+                    {
+                        if (hit.collider.transform.parent.CompareTag("Tree"))
                         {
-                            if (hit.collider.transform.parent.CompareTag("Tree"))
+                            Tree tree = hit.collider.transform.parent.GetComponent<Tree>();
+                            if (tree != null)
                             {
-                                Tree tree = hit.collider.transform.parent.GetComponent<Tree>();
-                                if (tree != null)
-                                {
-                                    tree.TakeDamage(damage);
-                                }
+                                yield return new WaitForSeconds(.5f);
+                                tree.TakeDamage(damage);
                             }
                         }
-                        return;
-                    case 1:
-                        if (hit.collider.transform.CompareTag("Rock"))
-                        {
-                            Destroy(hit.transform.gameObject);
-                            inventory.AddItem(3, 1);
-                        }
-                        return;
+                    }
+                }
+                if(index == 1)
+                {
+                    if (hit.collider.transform.CompareTag("Rock"))
+                    {
+                        yield return new WaitForSeconds(.5f);
+                        Destroy(hit.transform.gameObject);
+                        inventory.AddItem(3, 1);
+                    }
+                }
+                if(index == 3)
+                {
+                    if (hit.collider.transform.CompareTag("Sheep"))
+                    {
+                        yield return new WaitForSeconds(.4f);
+                        hit.collider.GetComponent<AnimalAI>().TakeDamage(damage);
+                    }
                 }
             }
         }

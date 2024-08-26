@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour
     public List<Item> items = new List<Item>();
     public Transform inventoryContainer;
     public GameObject inventoryItemPrefab;
+    public GameObject useItemPanelPrefab;
 
     public void AddItem(int id, int quantity)
     {
@@ -18,6 +19,7 @@ public class Inventory : MonoBehaviour
             Debug.LogWarning($"Item with ID {id} not found in database.");
             return;
         }
+
         while (quantity > 0)
         {
             Item inventoryItem = items.Find(i => i.id == id && i.quantity < 10);
@@ -40,34 +42,41 @@ public class Inventory : MonoBehaviour
             }
         }
     }
-    void UpdateUI(Item item)
+
+    public void UpdateUI(Item item)
     {
         foreach (Transform child in inventoryContainer)
         {
-            InventoryUIItem uiItem = child.GetComponent<InventoryUIItem>();
-            if (uiItem != null && uiItem.Item == item)
+            InventorySlot slot = child.GetComponent<InventorySlot>();
+            if (slot != null && slot.item == item)
             {
                 TextMeshProUGUI quantityText = child.Find("QuantityText").GetComponent<TextMeshProUGUI>();
                 quantityText.text = item.quantity.ToString();
                 break;
             }
         }
-    }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Z))
+        List<Item> itemsToRemove = new List<Item>();
+
+        foreach (Item item0 in items)
         {
-            AddItem(0, 1);
-            AddItem(1, 1);
-            AddItem(2, 1);
+            if (item0.quantity <= 0)
+            {
+                itemsToRemove.Add(item0);
+            }
+        }
+        foreach (Item itemToRemove in itemsToRemove)
+        {
+            RemoveItem(itemToRemove);
         }
     }
+
     void CreateUIItem(Item item)
     {
         GameObject newItem = Instantiate(inventoryItemPrefab, inventoryContainer);
-        InventoryUIItem uiItem = newItem.AddComponent<InventoryUIItem>();
-        uiItem.Item = item;
+        InventorySlot slot = newItem.GetComponent<InventorySlot>();
+        slot.item = item;
+        slot.useItemPanel = useItemPanelPrefab;
 
         TextMeshProUGUI itemNameText = newItem.transform.Find("ItemNameText").GetComponent<TextMeshProUGUI>();
         itemNameText.text = item.itemName;
@@ -78,8 +87,10 @@ public class Inventory : MonoBehaviour
         Image iconImage = newItem.transform.Find("IconImage").GetComponent<Image>();
         iconImage.sprite = item.icon;
     }
-}
-public class InventoryUIItem : MonoBehaviour
-{
-    public Item Item { get; set; }
+
+    public void RemoveItem(Item item)
+    {
+        items.Remove(item);
+        UpdateUI(item);
+    }
 }
